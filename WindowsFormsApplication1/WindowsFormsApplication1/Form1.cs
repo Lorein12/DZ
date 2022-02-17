@@ -16,5 +16,38 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form form2 = new Form2();
+            form2.Show();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form form3 = new Form3();
+            form3.Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
