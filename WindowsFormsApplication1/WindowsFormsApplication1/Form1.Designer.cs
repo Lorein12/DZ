@@ -121,7 +121,6 @@
             this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.No;
-            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.nba_logo;
             this.pictureBox1.Location = new System.Drawing.Point(27, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(69, 127);
@@ -131,7 +130,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::WindowsFormsApplication1.Properties.Resources._1;
             this.pictureBox2.Location = new System.Drawing.Point(74, 405);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(162, 110);
@@ -142,7 +140,6 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::WindowsFormsApplication1.Properties.Resources._2;
             this.pictureBox3.Location = new System.Drawing.Point(261, 405);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(162, 110);
@@ -153,13 +150,13 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::WindowsFormsApplication1.Properties.Resources._3;
             this.pictureBox4.Location = new System.Drawing.Point(450, 405);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(162, 110);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // button3
             // 
@@ -215,9 +212,9 @@
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

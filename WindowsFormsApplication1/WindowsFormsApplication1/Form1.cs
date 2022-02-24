@@ -11,7 +11,15 @@ using System.Windows.Forms;
 namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
+
     {
+        int index = 0;
+
+        string[] imagelist = new string[]
+        {
+            "1.jpg","1.jpg","3.jpg","4.jpg","5.png"
+        };
+        
         public Form1()
         {
             InitializeComponent();
@@ -67,12 +75,22 @@ namespace WindowsFormsApplication1
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+          /*  index--;
+            if (index < imagelist.Length)
+                index = 0;
+            */
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            
+            index++;
+            if (index > imagelist.Length) index = 0;
+            pictureBox2.Load("../../../photos/" + imagelist[index]);
+            pictureBox3.Load("../../../photos/" + imagelist[index + 2]);
+            pictureBox4.Load("../../../photos/" + imagelist[index + 3]);
+     
+          
         }
 
         private void label2_Click_1(object sender, EventArgs e)
@@ -92,6 +110,20 @@ namespace WindowsFormsApplication1
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            pictureBox2.Load("../../../photos/" + imagelist[0]);
+            pictureBox3.Load("../../../photos/" + imagelist[2]);
+            pictureBox4.Load("../../../photos/" + imagelist[3]);
+            
 
         }
     }
